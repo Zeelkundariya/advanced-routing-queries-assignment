@@ -79,5 +79,3 @@ notes-app/
    - For development: `pnpm run dev`
    - For production: `pnpm start`
 
-## 📜 License
-This project is for educational purposes as part of the SEM-2 Backend Assignment.
