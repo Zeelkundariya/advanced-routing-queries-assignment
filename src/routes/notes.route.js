@@ -13,6 +13,7 @@ const {
       deleteBulkNotes,
       getNotesByCategory,
       getNotesByStatus,
+      getNoteSummary,
 } = require('../controllers/notes.controllers');
 
 
@@ -27,6 +28,8 @@ router.delete('/:id', deleteNote);
 router.delete('/bulk', deleteBulkNotes);
 router.get('/category/:category', getNotesByCategory);
 router.get('/status/:isPinned', getNotesByStatus);
+router.get('/:id/summary', getNoteSummary);
+
 
 
 
