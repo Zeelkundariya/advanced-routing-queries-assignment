@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Note = require('../models/notes.model');
+const { get } = require('../routes/notes.route');
 
 
 //Q-1
@@ -62,7 +63,29 @@ const createBulkNotes = async (req, res) => {
     }
 };
 
+
+//Q-3
+const getAllNotes = async (req, res) => {
+    try {
+        const notes = await Note.find();
+        res.status(200).json({
+            success: true,
+            message: "Notes fetched successfully",
+            count: notes.length,
+            data: notes
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: "Failed to fetch notes",
+            data: error.message
+        });
+    }
+};
+
+
 module.exports = {
     createNote,
-    createBulkNotes
+    createBulkNotes,
+    getAllNotes
 };
