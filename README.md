@@ -3,7 +3,7 @@
 A robust RESTful API built with Node.js, Express, and MongoDB for managing personal notes. This project demonstrates advanced routing techniques including route parameters, query parameters, pagination, and sorting.
 
 ## 🚀 Live Links
-- **Deployed API:** [https://advanced-routing-queries-assignment.onrender.com](https://advanced-routing-queries-assignment.onrender.com)
+- **Deployed API:** [https://advanced-routing-queries-assignment.onrender.com](https://advanced-routing-queries-assignment-2.onrender.com)
 - **Postman Documentation:** [https://documenter.getpostman.com/view/50839472/2sBXqGpLyK](https://documenter.getpostman.com/view/50839472/2sBXqGpLyK)
 
 ## 🛠 Tech Stack
