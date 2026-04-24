@@ -14,6 +14,7 @@ const {
       getNotesByCategory,
       getNotesByStatus,
       getNoteSummary,
+      filterNotes,
 } = require('../controllers/notes.controllers');
 
 
@@ -29,6 +30,8 @@ router.delete('/bulk', deleteBulkNotes);
 router.get('/category/:category', getNotesByCategory);
 router.get('/status/:isPinned', getNotesByStatus);
 router.get('/:id/summary', getNoteSummary);
+router.get('/filter', filterNotes);
+
 
 
 
