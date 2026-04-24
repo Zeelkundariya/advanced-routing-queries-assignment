@@ -20,6 +20,7 @@ const {
       filterByDateRange,
       paginateNotes,
       paginateByCategory,
+      sortNotes,
 } = require('../controllers/notes.controllers');
 
 
@@ -41,6 +42,8 @@ router.get('/filter/category', filterByCategory);
 router.get('/filter/date-range', filterByDateRange);
 router.get('/paginate', paginateNotes);
 router.get('/paginate/category/:category', paginateByCategory);
+router.get('/sort', sortNotes);
+
 
 
 
