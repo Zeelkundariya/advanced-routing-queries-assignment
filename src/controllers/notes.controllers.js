@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Note = require('../models/notes.model');
 
+
+//Q-1
 const createNote = async (req, res) => {
     try {
         const { title, content, category, isPinned } = req.body;
@@ -30,6 +32,37 @@ const createNote = async (req, res) => {
     }
 };
 
+
+//Q-2
+const createBulkNotes = async (req, res) => {
+    try {
+        const { notes } = req.body;
+
+        if (!notes || !Array.isArray(notes) || notes.length === 0) {
+            return res.status(400).json({
+                success: false,
+                message: "notes array is required and cannot be empty",
+                data: null
+            });
+        }
+
+        const createdNotes = await Note.insertMany(notes);
+
+        res.status(201).json({
+            success: true,
+            message: `${createdNotes.length} notes created successfully`,
+            data: createdNotes
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: "Failed to create bulk notes",
+            data: error.message
+        });
+    }
+};
+
 module.exports = {
-    createNote
+    createNote,
+    createBulkNotes
 };
