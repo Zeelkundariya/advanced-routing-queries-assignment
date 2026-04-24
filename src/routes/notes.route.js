@@ -16,6 +16,7 @@ const {
       getNoteSummary,
       filterNotes,
       getPinnedNotes,
+      filterByCategory,
 } = require('../controllers/notes.controllers');
 
 
@@ -33,6 +34,8 @@ router.get('/status/:isPinned', getNotesByStatus);
 router.get('/:id/summary', getNoteSummary);
 router.get('/filter', filterNotes);
 router.get('/filter/pinned', getPinnedNotes);
+router.get('/filter/category', filterByCategory);
+
 
 
 
