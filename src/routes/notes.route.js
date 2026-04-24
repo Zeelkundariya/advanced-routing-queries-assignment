@@ -11,6 +11,7 @@ const {
       updateNote,
       deleteNote,
       deleteBulkNotes,
+      getNotesByCategory,
 } = require('../controllers/notes.controllers');
 
 
@@ -23,6 +24,8 @@ router.put('/:id', replaceNote);
 router.patch('/:id', updateNote);
 router.delete('/:id', deleteNote);
 router.delete('/bulk', deleteBulkNotes);
+router.get('/category/:category', getNotesByCategory);
+
 
 
 module.exports = router;    
