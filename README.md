@@ -4,7 +4,7 @@ A robust RESTful API built with Node.js, Express, and MongoDB for managing perso
 
 ## 🚀 Live Links
 - **Deployed API:** [https://advanced-routing-queries-assignment.onrender.com](https://advanced-routing-queries-assignment-2.onrender.com)
-- **Postman Documentation:** [https://documenter.getpostman.com/view/50839472/2sBXqGpLyK](https://documenter.getpostman.com/view/50839472/2sBXqGpLyK)
+- **Postman Documentation:** [https://documenter.getpostman.com/view/50839472/2sBXqGpLyK](https://documenter.getpostman.com/view/50840741/2sBXqGpgc3)
 
 ## 🛠 Tech Stack
 - **Backend:** Node.js, Express.js
