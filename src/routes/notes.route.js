@@ -2,7 +2,12 @@ const express = require('express');
 
 const router = express.Router();
 
-const {} = require('../controllers/notes.controllers');
+const {
+      createNote
+} = require('../controllers/notes.controllers');
 
 
-module.exports = router;
+// CRUD Bulk Routes
+router.post('/bulk', createBulkNotes);
+
+module.exports = router;    
