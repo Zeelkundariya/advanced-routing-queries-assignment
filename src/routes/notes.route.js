@@ -19,6 +19,7 @@ const {
       filterByCategory,
       filterByDateRange,
       paginateNotes,
+      paginateByCategory,
 } = require('../controllers/notes.controllers');
 
 
@@ -39,6 +40,8 @@ router.get('/filter/pinned', getPinnedNotes);
 router.get('/filter/category', filterByCategory);
 router.get('/filter/date-range', filterByDateRange);
 router.get('/paginate', paginateNotes);
+router.get('/paginate/category/:category', paginateByCategory);
+
 
 
 
